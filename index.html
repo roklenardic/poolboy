@@ -231,19 +231,29 @@
       display: flex;
       align-items: center;
       /*
-        Hero background photo:
-        Replace the URL below with your own pool photo.
-        Free pool photos: https://unsplash.com/s/photos/swimming-pool-family
-        Recommended size: 1920×1080px or wider.
+        HERO PHOTO — HOW TO SET YOUR OWN IMAGE
+        ────────────────────────────────────────────────────────────
+        The current photo (Pexels) shows children enjoying a pool.
+        To show a rural family-of-4 scene as requested:
+
+        1. Go to https://www.pexels.com/search/family+backyard+pool/
+           or https://unsplash.com/s/photos/family-backyard-pool
+        2. Find a photo matching: simple rural pool, 2 parents + 2 kids
+        3a. Local (recommended for GitHub Pages):
+            Download it → save as  img/hero.jpg  in this folder
+            Replace the url() below with: url('img/hero.jpg')
+        3b. External CDN: paste the Pexels/Unsplash CDN URL directly.
+        ────────────────────────────────────────────────────────────
       */
       background:
-        linear-gradient(160deg,
-          rgba(2, 34, 90, 0.72) 0%,
-          rgba(0, 80, 150, 0.60) 40%,
-          rgba(0, 150, 199, 0.50) 100%),
-        url('https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?fit=crop&w=1920&q=80')
+        linear-gradient(155deg,
+          rgba(1, 28, 70, 0.68) 0%,
+          rgba(0, 70, 120, 0.55) 35%,
+          rgba(10, 100, 80, 0.38) 70%,
+          rgba(30, 140, 60, 0.30) 100%),
+        url('https://images.pexels.com/photos/9044063/pexels-photo-9044063.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')
         center / cover no-repeat;
-      background-color: var(--primary-dark); /* CSS fallback */
+      background-color: #0d4a2f; /* CSS fallback if photo doesn't load */
     }
 
     .hero-wave {
